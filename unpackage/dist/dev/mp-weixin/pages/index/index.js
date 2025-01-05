@@ -2,10 +2,12 @@
 const common_vendor = require("../../common/vendor.js");
 const tab = () => "../../components/tab.js";
 const firstNav = () => "../../components/first-nav.js";
+const videoList = () => "../../components/video-list.js";
 const _sfc_main = {
   components: {
     tab,
-    firstNav
+    firstNav,
+    videoList
   },
   data() {
     return {};
@@ -16,8 +18,9 @@ const _sfc_main = {
 };
 if (!Array) {
   const _component_first_nav = common_vendor.resolveComponent("first-nav");
+  const _component_video_list = common_vendor.resolveComponent("video-list");
   const _component_tab = common_vendor.resolveComponent("tab");
-  (_component_first_nav + _component_tab)();
+  (_component_first_nav + _component_video_list + _component_tab)();
 }
 function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   return {};

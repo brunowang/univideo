@@ -1,1 +1,1 @@
-<view class="content"><first-nav u-i="28bef43a-0" bind:__l="__l"></first-nav><tab u-i="28bef43a-1" bind:__l="__l"></tab></view>
+<view class="content"><first-nav u-i="28bef43a-0" bind:__l="__l"></first-nav><video-list u-i="28bef43a-1" bind:__l="__l"></video-list><tab u-i="28bef43a-2" bind:__l="__l"></tab></view>
