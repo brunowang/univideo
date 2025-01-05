@@ -6,7 +6,9 @@
 		<view class="tab-box">
 			关注
 		</view>
-		<view class="iconfont icon-jiahao tab-box">
+		<view class="tab-box">
+			<view class="iconfont icon-jiahao icon-box">
+			</view>
 		</view>
 		<view class="tab-box">
 			消息
@@ -45,5 +47,15 @@
 	height: 50px;
 	line-height: 50px;
 	font-size: 20px;
+}
+.icon-box {
+	width: 60%;
+	height: 30px;
+	background: #FFFFFF;
+	color: #000000;
+	margin: 10px 20%;
+	line-height: 30px;
+	border-radius: 5px;
+	font-size: 15px;
 }
 </style>
