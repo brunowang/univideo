@@ -6,8 +6,7 @@
 		<view class="tab-box">
 			关注
 		</view>
-		<view class="tab-box">
-			⭕️
+		<view class="iconfont icon-jiahao tab-box">
 		</view>
 		<view class="tab-box">
 			消息
