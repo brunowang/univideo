@@ -15,20 +15,20 @@
 <script>
 	import videoPlayer from '/components/video-player.vue'
 	export default {
-		components:{
+		components: {
 			videoPlayer
 		},
-		name:"video-list",
-		props:[
+		name: "video-list",
+		props: [
 			'list'
 		],
 		data() {
 			return {
-				"videos":[]
+				"videos": []
 			};
 		},
-		watch:{
-			list(){
+		watch: {
+			list() {
 				this.videos = this.list
 			}
 		}
@@ -36,21 +36,24 @@
 </script>
 
 <style>
-.videoList {
-	height: 100vh;
-	width: 100vw;
-}
-.swiper-box {
-	height: 100%;
-	width: 100%;
-}
-.swiper {
-	height: 100%;
-	width: 100%;
-}
-.swiper-item {
-	height: 100%;
-	width: 100%;
-	z-index: 19;
-}
+	.videoList {
+		height: 100vh;
+		width: 100vw;
+	}
+
+	.swiper-box {
+		height: 100%;
+		width: 100%;
+	}
+
+	.swiper {
+		height: 100%;
+		width: 100%;
+	}
+
+	.swiper-item {
+		height: 100%;
+		width: 100%;
+		z-index: 19;
+	}
 </style>
