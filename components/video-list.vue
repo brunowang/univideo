@@ -2,7 +2,7 @@
 	<view class="videoList">
 		<view class="swiper-box">
 			<swiper class="swiper" :vertical="true">
-				<swiper-item v-for="item of list" :key="item.id">
+				<swiper-item v-for="item of videos" :key="item.id">
 					<view class="swiper-item" style="color:#000000">
 						<video-player :video="item"></video-player>
 					</view>
@@ -19,23 +19,18 @@
 			videoPlayer
 		},
 		name:"video-list",
+		props:[
+			'list'
+		],
 		data() {
 			return {
-				"list":[
-					{
-						id:1,
-						src:'https://cdn.aipicplus.com/assets/video_gen/video_gen_shake_booty.mp4'
-					},
-					{
-						id:2,
-						src:'https://cdn.aipicplus.com/assets/video_gen/video_gen_flirty_wink.mp4'
-					},
-					{
-						id:3,
-						src:'https://cdn.aipicplus.com/assets/video_gen/video_gen_strike_pose.mp4'
-					}
-				]
+				"videos":[]
 			};
+		},
+		watch:{
+			list(){
+				this.videos = this.list
+			}
 		}
 	}
 </script>
