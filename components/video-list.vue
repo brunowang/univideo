@@ -6,6 +6,9 @@
 					<view class="swiper-item" style="color:#000000">
 						<video-player :video="item"></video-player>
 					</view>
+					<view class="text-area">
+						<text-area :video="item"></text-area>
+					</view>
 				</swiper-item>
 			</swiper>
 		</view>
@@ -14,11 +17,13 @@
 
 <script>
 	import videoPlayer from '/components/video-player.vue'
+	import textArea from '/components/text-area.vue'
 	export default {
-		components: {
-			videoPlayer
-		},
 		name: "video-list",
+		components: {
+			videoPlayer,
+			textArea
+		},
 		props: [
 			'list'
 		],
@@ -55,5 +60,12 @@
 		height: 100%;
 		width: 100%;
 		z-index: 19;
+	}
+
+	.text-area {
+		z-index: 20;
+		position: absolute;
+		bottom: 50px;
+		left: 10px;
 	}
 </style>
